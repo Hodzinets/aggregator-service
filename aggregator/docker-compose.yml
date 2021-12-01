@@ -1,0 +1,14 @@
+version: '2'
+networks:
+  default:
+    external:
+      name: external-example
+
+services:
+  aggregator-service:
+    image: 'aggregator-service:latest'
+    build:
+      context: .
+    container_name: aggregator-service
+    ports:
+      - 8882:8882
