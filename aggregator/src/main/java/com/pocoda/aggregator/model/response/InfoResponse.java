@@ -7,4 +7,5 @@ import lombok.Value;
 @Builder
 public class InfoResponse {
     private WeatherResponse weather;
+    private PollutionWebResponse pollution;
 }
